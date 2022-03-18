@@ -15,13 +15,13 @@
                 </div>
                 
                 <div class="form-group">
-                    {!! Form::lavel('passowrd', 'Password') !!}
+                    {!! Form::label('password', 'Password') !!}
                     {!! Form::password('password', ['class' => 'form-control']) !!}
                 </div>
             
                 {!! Form::submit('Log in', ['class' => 'btn btn-primary btn-block']) !!}
                 
-            {{!! Form::close() !!}}
+            {!! Form::close() !!}
             
            {{-- ユーザ登録ページへのリンク --}} 
            <p class="mt-2">Ne user?{!! link_to_route('signup.get', 'Sign up now!') !!}</p>
